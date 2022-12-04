@@ -1,0 +1,61 @@
+.div-wight{
+     position: relative; 
+    
+}
+.image-wight{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.red-car-position{
+    position: absolute;
+    width: 150px;
+    left: 100PX;
+    top: 127px;
+    z-index: 100;
+    transition: all 0.5s linear;
+    animation: red-carmove 14s  infinite;
+    
+   
+} 
+@keyframes red-carmove {
+    0% {left: 100px;}
+     15% {left: 170px; top: 170px; transform: rotate(20deg);} 
+    /* 16% {left: 180px; top: 170px; } */
+     25% {left: 200px; left: 230px; top: 175px;  transform: rotate(-7deg); } 
+    40% {left: 244px;  top: 175px; }  
+    80% {left: 650px; top:120;}
+    100% {left: 100px;}
+      
+}
+
+.red-car-position:hover{
+   width: 200px; 
+}
+.black-car-position{
+    position: absolute;
+    width: 150px;
+    right: 100px;
+    top: 127px;
+    z-index: 101;
+}
+.walking-person{
+    position: absolute;
+    width: 43px;
+    left: 380px;
+    top: 88px;
+    z-index: 102;
+    animation: walking-person 14s infinite backwards;
+
+}
+@keyframes walking-person {
+    0% { left:380px ;}
+    50% { left:400px;}
+    70% { transform: rotate(-31deg) }
+    80%{ top: 280px; }
+    100% {left: 380px;}
+    90% {top: 240px;}
+    
+}
